@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    let soDien = parseFloat(prompt('Nhập giá trị điện năng tiêu thụ "Kw"'));
+    let soTiendien;
+    //Đơn giá điện, tạm quy là 3000đ/1kw
+    //sử dụng 0-100 : đơn giá áp dụng 90%
+    //sử dụng 101-200 : đơn giá áp dụng 108%
+    //sử dụng 201-400 : đơn giá áp dụng 141%
+    //sử dụng 401-700 : đơn giá áp dụng 160%
+    //sử dụng >701 : đơn giá áp dụng 168%
+
+    if (soDien <=0){
+        alert ('Nhập giá trị tiêu tụ điện lớn hơn 0')
+    }else{
+        if (soDien <=100){
+            soTiendien=soDien*3000*0.9;
+        }else{
+            if (soDien <=200){
+                soTiendien=soDien*3000*1.08;
+            }else{
+                if (soDien <=400){
+                    soTiendien=soDien*3000*1.41;
+                }else{
+                    if (soDien <=700){
+                        soTiendien=soDien*3000*1.60;
+                    }else{
+                        soTiendien=soDien*3000*1.68;
+                    }
+                }
+            }
+        }
+    }
+    alert ('Số tiền điện áp dụng cho '+ soDien + 'kw là ' + soTiendien + 'VND');
+
+</script>
+</body>
+</html>

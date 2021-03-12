@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let number1 = parseFloat(prompt('Nhập số thứ nhất: '));
+    let number2 = parseFloat(prompt('Nhập số thứ hai: '));
+    let number3 = parseFloat(prompt('Nhập số thứ 3: '));
+    let max = number1;
+    if (max<number2) {
+        max=number2;
+        if (max<number3){
+             max =number3;
+        }
+    }else {
+        if (max<number3){
+            max=number3;
+        }
+    }
+    alert('Số lớn nhất là : ' + max);
+
+</script>
+
+</body>
+</html>

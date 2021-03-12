@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+
+
+<script>
+    let diemHS = parseFloat(prompt('Nhập giá trị điểm học sinh'));
+    if (diemHS<0) {
+        alert('Điểm nhập học sinh cần lớn hơn 0');
+
+    }else{
+        if (diemHS<5) {
+            alert('Học sinh xếp loại chưa đạt');
+
+        }else{
+            if (diemHS<7) {
+                alert('Học sinh xếp loại đạt');
+
+            }else{
+                if (diemHS<8) {
+                    alert('Học sinh xếp loại khá');
+                }else{
+                    if (diemHS<=10) {
+                        alert('Học sinh xếp loại giỏi');
+                    }else{
+                        alert('Giá trị nhập không thuộc thang điểm 10');
+                    }
+                }
+            }
+
+             }
+
+    }
+</script>
+</body>
+</html>

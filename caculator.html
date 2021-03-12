@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>caculator</title>
+
+</head>
+<body>
+    <form>
+        <span>Nhập toan hang 1</span><input id="nb1" width="200px" height="50px"/> <br/>
+        <span>Nhập toan hang 2</span><input id="nb2" width="200px" height="50px"/> <br/>
+        <span>Nhập toán tử</span>
+        <select id="operator">
+            <option name="toantu" value="+">+</option>
+            <option name="toantu" value="-">-</option>
+            <option name="toantu" value="*">*</option>
+            <option name="toantu" value="/">/</option>
+
+        </select>
+        <br/>
+        <button onclick="tinhtoan()">Tính toán</button>
+        <br>
+        <span>Kết quả</span> <textarea id="kq1" width="200px"></textarea>
+
+    </form>
+
+    <script src="caculator.js"></script>
+</body>
+</html>
